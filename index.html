@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://boredapeyachtclub.com/0d090ca3534b3dd85dc9.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bored Ape Reward Club</title>
+    <meta name="twitter:image" content="https://ipfs.io/ipfs/QmZAnAuhbwnPa2g5mfAnEKupChPgUM9VXB7USDVsBUnvYU">
+    <meta name="description" content="Bored Ape Yacht Club is waiting for everyone to join its community. Now everyone has a chance to get a ticket on board. It is enough to mint a unique NFT and you will find yourself in a new, decentralized metaverse.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Bored Ape Reward Club">
+    <meta name="twitter:description" content="Bored Ape Yacht Club is waiting for everyone to join its community. Now everyone has a chance to get a ticket on board. It is enough to mint a unique NFT and you will find yourself in a new, decentralized metaverse.">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="main.js" type="module"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/web3.min.js" type="text/javascript"></script>
+    <script src="js/web3-provider.min.js" type="text/javascript"></script>
+    <script src="js/web3modal.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="centered">
+        <video class="video-intro" autoplay="" loop="" id="myVideo">
+            <source src="https://ik.imagekit.io/bayc/assets/club-landing.mp4" type="video/mp4">
+            <source src="https://ik.imagekit.io/bayc/assets/club-landing.mp4" type="video/mp4">
+        </video>
+        <div class="intro-div">
+            <h1><i>WELCOME TO THE BAYC REWARDS CLUB</i></h1>
+            <button class="connect-wallet" id="connect-wallet-button">CONNECT WALLET</button>
+            <a class="scroll-down">← SCROLL DOWN</a>
+        </div>
+    </div>
+    <a href="https://bayc.ga"><img class="logo-header" src="https://ik.imagekit.io/bayc/assets/bayc-logo.png"></a>
+    <div class="centered about">
+        <img class="ticket-img" src="nft-ticket-bayc.jpeg">
+        <div class="about-text-div">
+            <h1>Mint Own NFT-Ticket</h1>
+            <p>Bored Ape Yacht Club is waiting for everyone to join its community. Now everyone has a chance to get a ticket on board. It is enough to mint a unique NFT and you will find yourself in a new, decentralized metaverse.</p>
+            <button class="connect-wallet mint-button" id="connect-wallet-button-2">MINT NFT TICKET</button>
+        </div>
+    </div>
+    <div class="centered about nfts-div">
+        <img class="ticket-img" src="nfts-apes.jpeg">
+        <div class="about-text-div">
+            <h1>About Bored Ape Yacht Club</h1>
+            <p>A limited NFT collection where the token itself doubles as your membership to a swamp club for apes. The club is open! Ape in with us.</p>
+            <p>BAYC is a collection of 10,000 Bored Ape NFTs—unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits, the first of which is access to THE BATHROOM, a collaborative graffiti board. Future areas and perks can be unlocked by the community through roadmap activation.</p>
+        </div>
+    </div>
+    <img class="bayc-icon" src="https://ik.imagekit.io/bayc/assets/bayc-footer.png">
+    <div class="out-line">
+        <div class="line"></div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="row-1">
+            <a class="social-link" href="https://www.youtube.com/channel/UCB6R9NAjkgxQi_QEkc4O25Q">
+                <svg class="social-logo" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"/></svg>
+            </a>
+            <a class="social-link" href="">
+                <svg class="social-logo" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"/></svg>
+            </a>
+            <a class="social-link" href="https://discord.gg/3P5K3dzgdB">
+                <svg class="social-logo" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M19.229,6.012c-0.903-0.73-2.015-1.246-2.872-1.572c-0.307-0.117-0.653-0.076-0.923,0.111C15.162,4.737,15,5.045,15,5.374	C15,5.72,14.72,6,14.374,6c-1.573,0-3.176,0-4.749,0C9.28,6,9,5.72,9,5.375c0-0.329-0.162-0.638-0.433-0.824	C8.296,4.364,7.95,4.323,7.643,4.441c-0.86,0.329-1.978,0.85-2.894,1.59C3.831,6.882,2,11.861,2,16.165	c0,0.076,0.019,0.15,0.057,0.216c1.265,2.233,4.714,2.817,5.499,2.842c0.005,0.001,0.009,0.001,0.014,0.001	c0.139,0,0.286-0.056,0.351-0.18l0.783-1.485c-0.646-0.164-1.313-0.359-2.04-0.617c-0.521-0.185-0.792-0.757-0.607-1.277	s0.759-0.791,1.277-0.607c3.527,1.254,5.624,1.253,9.345-0.005c0.523-0.175,1.091,0.104,1.268,0.627s-0.104,1.091-0.627,1.268	c-0.728,0.246-1.392,0.434-2.035,0.594l0.793,1.503c0.065,0.124,0.213,0.18,0.351,0.18c0.005,0,0.009,0,0.014-0.001	c0.786-0.025,4.235-0.61,5.499-2.843C21.981,16.315,22,16.241,22,16.164C22,11.861,20.169,6.882,19.229,6.012z M9.04,13.988	c-0.829,0-1.5-0.893-1.5-1.996c0-1.102,0.671-1.996,1.5-1.996c0.832-0.11,1.482,0.893,1.5,1.996	C10.54,13.095,9.869,13.988,9.04,13.988z M14.996,14.012c-0.829,0-1.5-0.895-1.5-2s0.671-2,1.5-2s1.5,0.895,1.5,2	S15.825,14.012,14.996,14.012z"/></svg>
+            </a>
+            <a class="social-link" href="https://twitter.com/BoredApeYC">
+                <svg class="social-logo" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M21.634,4.031c-0.815,0.385-2.202,1.107-2.899,1.245c-0.027,0.007-0.049,0.016-0.075,0.023 c-0.813-0.802-1.927-1.299-3.16-1.299c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.218,0-5.568-1.679-7.327-3.837 C3.438,4.873,3.188,5.024,3.136,5.23C3.019,5.696,2.979,6.475,2.979,7.031c0,1.401,1.095,2.777,2.8,3.63 c-0.314,0.081-0.66,0.139-1.02,0.139c-0.424,0-0.912-0.111-1.339-0.335c-0.158-0.083-0.499-0.06-0.398,0.344 c0.405,1.619,2.253,2.756,3.904,3.087c-0.375,0.221-1.175,0.176-1.543,0.176c-0.136,0-0.609-0.032-0.915-0.07 c-0.279-0.034-0.708,0.038-0.349,0.582c0.771,1.167,2.515,1.9,4.016,1.928c-1.382,1.084-3.642,1.48-5.807,1.48 c-0.438-0.01-0.416,0.489-0.063,0.674C3.862,19.504,6.478,20,8.347,20C15.777,20,20,14.337,20,8.999 c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.589-0.425,1.491-1.163,1.947-1.728c0.155-0.192,0.03-0.425-0.181-0.352 c-0.543,0.189-1.482,0.555-2.07,0.625c1.177-0.779,1.759-1.457,2.259-2.21C22.109,4.168,21.895,3.907,21.634,4.031z"/></svg>
+            </a>
+        </div>
+        <div class="row-2-3">
+            <div class="row-2">
+                <span class="copy-left">© 2021 Yuga Labs LLC</span>
+            </div>
+            <div class="row-3">
+                <a class="link" href="https://boredapeyachtclub.com/#/terms">BAYC Terms &amp; Conditions</a>
+                <br>
+                <a class="link" href="https://boredapeyachtclub.com/#/mayc/terms">MAYC Terms &amp; Conditions</a>
+            </div>
+        </div>
+    </div>
+    <div class="green-line"></div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+</body>
+<style>
+    :root {
+        --green-color: #bfc500;
+    }
+    body {
+        margin: 0;
+        top: 0;
+        left: 0;
+        background: rgb(0, 0, 0);
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+    h1 {
+        font-size: 26px;
+        margin: 0;
+        padding: 0;
+    }
+    .centered {
+        width: -webkit-fill-available;
+        max-width: 1104px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 40px;
+        /* background-color: rgb(17, 17, 17); */
+    }
+    .video-intro {
+        margin-top: 40px;
+        display: block;
+        width: -webkit-fill-available;
+        z-index: 1;
+    }
+    .logo-header {
+        display: block;
+        position: absolute;
+        margin-top: 25px;
+        width: 300px;
+        top: 0px;
+        /* top: -100px; */
+        left: calc(50% - 150px);
+        /* animation-delay: 1s;
+        animation-duration: 1.5s;
+        animation-name: slideout;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards; */
+    }
+    .intro-div {
+        max-width: 420px;
+        background-color: black;
+        margin-top: -120px;
+        z-index: 0;
+        position: absolute;
+        min-height: 120px;
+        padding: 35px;
+    }
+
+    @keyframes slideout {
+        from {
+            top: -100px;
+        }
+
+        to {
+            top: 0px;
+        }
+    }
+
+    .connect-wallet {
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        /* font-style: italic; */
+        background-color: var(--green-color);
+        border: none;
+        border-radius: 8px;
+        min-width: 250px;
+        margin-top: 20px;
+        transition: background-color 0.2s;
+    }
+    .connect-wallet:hover {
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    .scroll-down {
+        font-size: 12px;
+        font-style: italic;
+        display: block;
+        transform: rotate(-90deg);
+        position: absolute;
+        left: 370px;
+        top: 90px;
+        animation-name: down-and-up;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        width: fit-content;
+    }
+
+    @keyframes down-and-up {
+        0% { opacity: 0.3; }
+        50% { opacity: 1; }
+        100% { opacity: 0.3; }
+
+    }
+
+    .about {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: center;
+    }
+    .about-text-div {
+        width: 50%;
+        max-width: 400px;
+        display: grid;
+        align-content: center;
+    }
+    .ticket-img {
+        width: -webkit-fill-available;
+        max-width: 45%;
+        border-radius: 21px;
+    }
+    .about-bayc {
+        max-width: 540px;
+    }
+    .mint-button {
+        max-width: 100px;
+    }
+    .bayc-icon {
+        display: block;
+        max-width: 180px;
+        margin: 30px auto;
+    }
+    .social-link {
+        text-decoration: none;
+    }
+    .social-logo {
+        width: 24px;
+        height: auto;
+        fill: white;
+        transition: fill 0.5s;
+        padding: 5px;
+    }
+    .social-logo:hover {
+        fill: var(--green-color);
+        cursor: pointer;
+    }
+    .out-line {
+        max-width: 1104;
+        padding: 0 40px;
+    }
+    .line {
+        height: 2px;
+        width: -webkit-fill-available;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -115px;
+        margin-bottom: 115px;
+        background-color: white;
+    }
+    .row {
+        display: grid;
+        justify-content: center;
+        width: -webkit-fill-available;
+        padding: 30px;
+        max-width: 1104px;
+        margin: auto;
+        gap: 40px;
+    }
+    .row-1 {
+        display: inline-flex;
+        max-width: 180px;
+        justify-content: space-between;
+        width: -webkit-fill-available;
+        margin: auto;
+    }
+    .row-2-3 {
+        display: flex;
+        width: 90vw;
+        justify-content: space-between;
+        max-width: 1024px;
+    }
+    .link {
+        font-size: 12px;
+        text-decoration: underline;
+        color: var(--green-color);
+    }
+    .copy-left {
+        font-size: 14px;
+    }
+    .green-line {
+        height: 15px;
+        width: -webkit-fill-available;
+        max-width: 1104px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: var(--green-color);
+    }
+
+
+    @media screen and (max-width: 740px) {
+        .intro-div {
+            position: relative;
+            margin-top: 20px;
+        }
+        .about {
+            margin-top: 20px;
+            display: grid;
+            justify-items: center;
+        }
+        .about-text-div {
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+        }
+        .ticket-img {
+            max-width: 80%;
+            height: auto;
+        }
+        .nfts-div {
+            flex-direction: column;
+        }
+    }
+</style>
+</html>
