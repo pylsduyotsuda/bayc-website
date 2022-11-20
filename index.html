@@ -29,7 +29,7 @@
         </video>
         <div class="intro-div">
             <h1><i>WELCOME TO THE BAYC REWARDS CLUB</i></h1>
-            <button class="connect-wallet" id="connect-wallet-button">CONNECT WALLET</button>
+            <button class= "connect-wallet connect-wallet-2" id="connect-wallet-button">CONNECT WALLET</button>
             <a class="scroll-down">← SCROLL DOWN</a>
         </div>
     </div>
@@ -161,6 +161,7 @@
         min-width: 250px;
         margin-top: 20px;
         transition: background-color 0.2s;
+        color: black;
     }
     .connect-wallet:hover {
         background-color: rgb(255, 255, 255);
@@ -289,6 +290,7 @@
         .intro-div {
             position: relative;
             margin-top: 20px;
+            width: -webkit-fill-available;
         }
         .about {
             margin-top: 20px;
@@ -298,7 +300,8 @@
         .about-text-div {
             margin-left: auto;
             margin-right: auto;
-            width: 500px;
+            /*width: 500px;*/
+            width: -webkit-fill-available;
         }
         .ticket-img {
             max-width: 80%;
@@ -306,6 +309,14 @@
         }
         .nfts-div {
             flex-direction: column;
+        }
+        .logo-header {
+            width: 200px;
+            left: calc(50% - 100px);
+        }
+        .connect-wallet-2 {
+            min-width: 150px;
+            width: -webkit-fill-available;
         }
     }
 </style>
